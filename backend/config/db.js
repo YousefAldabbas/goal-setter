@@ -16,3 +16,11 @@ const connectDB = async () => {
 }
 
 module.exports = connectDB;
+
+// var MongoClient = require('mongodb').MongoClient;
+// var uri = "mongodb://<username>:<password>@arabovcluster-shard-00-00.kd3sk.mongodb.net:27017,arabovcluster-shard-00-01.kd3sk.mongodb.net:27017,arabovcluster-shard-00-02.kd3sk.mongodb.net:27017/?ssl=true&replicaSet=atlas-5a2hfc-shard-0&authSource=admin&retryWrites=true&w=majority";
+// MongoClient.connect(uri, function(err, client) {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
