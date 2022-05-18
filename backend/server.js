@@ -26,6 +26,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('/', (req, res) => res.send('Please set to production'))
 }
 app.use(errorHandler);
+
 app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
