@@ -4,7 +4,6 @@ const colors = require("colors");
 const app = express();
 const dotenv = require("dotenv").config();
 // it will allow us to use the env variables from file
-const port = process.env.PORT || 5000;
 const { errorHandler } = require("./middleware/errorMiddleware");
 const connectDB = require("./config/db");
 connectDB();
@@ -27,4 +26,6 @@ if (process.env.NODE_ENV === 'production') {
   app.get('/', (req, res) => res.send('Please set to production'))
 }
 app.use(errorHandler);
-app.listen(port, () => console.log(`Server started on port ${port}`));
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
