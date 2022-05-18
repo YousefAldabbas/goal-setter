@@ -20,7 +20,8 @@
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.3",
-    "node-fetch": "^3.2.4"
+    "node-fetch": "^3.2.4",
+    "serve": "^13.0.2"
   },
   "devDependencies": {
     "concurrently": "^7.2.0",
