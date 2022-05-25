@@ -90,7 +90,6 @@ export const deleteGoal = createAsyncThunk('goals/delete', async (id, thunkAPI) 
             state.isError = false;
             state.isSuccess = true;
             state.goals = action.payload;
-            console.log(state.goals);
         })
         .addCase(getGoals.rejected, (state, action) => {
             state.isLoading = false;

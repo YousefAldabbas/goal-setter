@@ -88,7 +88,8 @@ h3 {
 
 .goals {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+
   gap: 10px;
 }
 
@@ -212,4 +213,13 @@ h3 {
   .heading p {
     font-size: 1.5rem;
   }
+  .goal {
+    width: 100%;
+    max-width: 89vw;
+  }
+.content{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 }

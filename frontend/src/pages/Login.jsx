@@ -15,7 +15,7 @@ function Login() {
   const { email, password } = formData; //destructuring
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  
+
   const { user, isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.auth
   );
@@ -52,7 +52,13 @@ function Login() {
   return (
     <>
       <section className="heading">
-        <h1>
+        <h1
+    style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    }}
+        >
           <FaSignInAlt />
           Login
         </h1>

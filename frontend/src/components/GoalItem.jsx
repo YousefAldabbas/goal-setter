@@ -9,7 +9,12 @@ function GoalItem({goal}) {
         <div>
             {new Date(goal.createdAt).toLocaleDateString('en-us')}
         </div>
-        <h2>{goal.text}</h2>
+        <h2
+        style={{
+          width: "100%",
+          whiteSpace: "wrap",
+        }}
+        >{goal.text}</h2>
         <button className="close"
         onClick={()=>dispatch(deleteGoal(goal._id))}>
 

@@ -1,4 +1,4 @@
-import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
@@ -14,7 +14,7 @@ function Header() {
     dispatch(reset());
     navigate("/");
   };
-  
+
   return (
     <header className="header">
       <div className="logo">
@@ -23,9 +23,11 @@ function Header() {
       <ul>
         {user ? (
           <li>
-            <button className="btn" onClick={onLogout}>
+            <button className="btn" onClick={
+              onLogout
+            }>
               <FaSignInAlt />
-              Login
+              Logout
             </button>
           </li>
         ) : (
