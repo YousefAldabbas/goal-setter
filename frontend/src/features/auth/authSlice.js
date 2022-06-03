@@ -53,7 +53,6 @@ export const authSlice = createSlice({
   reducers: {
     reset: (state) => {
       state.isLoading = false;
-      state.isLoading = false;
       state.isError = false;
       state.isSuccess = false;
       state.message = "";

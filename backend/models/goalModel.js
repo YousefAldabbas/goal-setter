@@ -1,9 +1,9 @@
-const moongose = require("mongoose");
+const mongoose = require("mongoose");
 
-const goalSchema = moongose.Schema(
+const goalSchema = mongoose.Schema(
   {
     user: {
-        type: moongose.Schema.Types.ObjectId, // this is the user id
+        type: mongoose.Schema.Types.ObjectId, // this is the user id
         required: true,
         ref: "User" // this is the name of the model
     },
@@ -17,4 +17,4 @@ const goalSchema = moongose.Schema(
   }
 );
 
-module.exports = moongose.model("Goal", goalSchema);
+module.exports = mongoose.model("Goal", goalSchema);
